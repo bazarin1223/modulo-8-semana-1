@@ -1,0 +1,40 @@
+/* Estilizando o formulário gerado pelo Bootstrap */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilizando o botão de envio do formulário */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilizando os campos do formulário (opcional) */
+.form-control {
+    background-color: #d4deea;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Cor do texto */
+  }
+  
+  .telefone {
+    font-weight: bold; /* Deixa o telefone em negrito */
+    color: #007bff; /* Cor específica para o telefone */
+  }
+  
+  .responsavel {
+    font-style: italic; /* Estilo itálico para o responsável */
+    color: #ff6600; /* Cor específica para o responsável */
+  }
+  

@@ -1,0 +1,60 @@
+/* Reset de estilos padrão para garantir consistência em navegadores diferentes */
+body, h1, h2, p, a, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Escolha a fonte desejada */
+    background-color: #f4f4f4; /* Cor de fundo da página */
+}
+
+.container {
+    max-width: 600px; /* Largura máxima do conteúdo para evitar que se espalhe muito na tela */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    padding: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    background-color: #3498db; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto no botão */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+.alert-success {
+    background-color: #d4edda; /* Cor de fundo da mensagem de sucesso */
+    color: #155724; /* Cor do texto da mensagem de sucesso */
+    padding: 15px; /* Espaçamento interno */
+    border: 1px solid #c3e6cb; /* Borda da mensagem de sucesso */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+form {
+    margin: 20px 0;
+}
+
+/* Estilos para os campos do formulário */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para o botão "Enviar" no formulário */
+.custom-btn {
+    background-color: #28a745; /* Cor de fundo do botão "Enviar" */
+    color: #fff; /* Cor do texto no botão "Enviar" */
+    padding: 10px 20px;
+    border: none; /* Remove a borda do botão "Enviar" */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+}

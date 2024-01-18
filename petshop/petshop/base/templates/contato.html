@@ -1,0 +1,33 @@
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contato</title>
+    <link rel="stylesheet" type="text/css" href="/static/contato.css">
+</head>
+<body>
+    
+    <a href="http://127.0.0.1:8000" class="btn-primary">HOME</a>
+    
+    <p>ENVIE UMA MENSAGEM ATRAVES DO FORMULARIO OU LIGUE PARA: <span class="telefone"> {{telefone}} </span><br>
+        FALE COM O RESPONSAVEL : <span class="responsavel"> {{ responsavel }} </span>
+        </p>
+        
+    
+    <form action="" method="post" novalidate>
+         {% csrf_token %}
+         {% bootstrap_form form %}
+       
+        <hr>
+        <button type="submit" class="btn btn-primary custom-btn">Enviar </button>
+       {% if sucesso %}
+       <p class="alert alert-success">mensagem enviada com sucesso!</p>
+       {% endif %}
+
+    
+    </form>
+    
+</body>
+</html>
+
+  

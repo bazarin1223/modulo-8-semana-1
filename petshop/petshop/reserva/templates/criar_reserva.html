@@ -1,0 +1,23 @@
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>reserva petshop</title>
+    <link rel="stylesheet" type="text/css" href="/static/reserva.css">
+</head>
+<body>
+    <a href="http://127.0.0.1:8000" class="btn-primary">HOME</a>
+    {% if sucesso %}
+    <p class="alert alert-success">AGENDAMENTO ENVIADO COM SUCESSO!</p>
+    {% endif %}
+   
+    <form action="" method="post" novalidate>
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <hr>
+        <button type="submit" class="btn btn-primary custom-btn">Enviar </button>
+
+    </form>
+   
+</body>
+</html>
